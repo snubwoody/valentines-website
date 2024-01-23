@@ -7,17 +7,16 @@
 	let loveArrow:HTMLElement;
 
 	onMount(() => {
-		let arrow = document.getElementById('love-arrow')
-		animateArrow(arrow)
+		animateArrow()
 	})
 
-	const animateArrow = (arrow:HTMLElement | null) => {
+	const animateArrow = () => {
 		anime({
 			targets:loveArrow,
-			scale:[0.0,1],
-			duration:500,
-			delay:1000,
-			easing: 'easeInOutQuad'
+			scale:[0,1],
+			duration:200,
+			delay:500,
+			easing: 'spring(1, 50, 5, 15)'
 		})
 	}
 </script>
@@ -25,7 +24,6 @@
 <img 
 src="/love-arrow.png" 
 alt="" 
-id="love-arrow"
 bind:this={loveArrow}
 style={`left: ${x}px; top: ${y}px`}
 class={`w-[70px] aspect-square absolute`}>
