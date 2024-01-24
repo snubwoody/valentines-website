@@ -15,7 +15,7 @@
 	const animateArrow = () => {
 		anime({
 			targets:loveArrow,
-			scale:[0.5,1,0.5,1],
+			scale:[0.5,1.5,0.5,1.5],
 			duration:900,
 			loop:true,
 			easing: 'spring(1, 80, 90, 10)'

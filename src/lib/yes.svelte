@@ -14,12 +14,27 @@
 
 <main class="w-screen h-screen fixed bg-white z-50 flex items-center justify-center">
 	<p>She said yes</p>
-	<div class="absolute left-5 top-5 flex">
-		<LoveEmoji left={10} top={50}/>
-		<LoveEmoji left={screenWidth-50} top={50}/>
+	
+	<div class="absolute left-2 top-0 flex flex-col justify-between h-screen">
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
 	</div>
-	<div class="absolute right-5 top-5 flex">
-		<LoveEmoji left={10} top={50}/>
-		<LoveEmoji left={screenWidth-50} top={50}/>
+	<div class="absolute right-2 top-0 flex flex-col justify-between h-screen">
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
+		<LoveEmoji/>
 	</div>
 </main>
