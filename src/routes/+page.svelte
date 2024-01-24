@@ -2,6 +2,7 @@
     import { browser } from "$app/environment";
     import Button from "$lib/button.svelte";
     import LoveArrow from "$lib/love-arrow.svelte";
+    import Yes from "$lib/yes.svelte";
     import { redirect } from "@sveltejs/kit";
     import anime from "animejs";
     import { onMount } from "svelte";
@@ -9,6 +10,8 @@
 	let screenWidth:number;
 	let screenHeight:number;
 	let eclipse:HTMLElement;
+
+	let yes:boolean | null = null;
 
 	const animateCircle = () => {
 		anime({
@@ -46,8 +49,8 @@
 		</div>
 	</div>
 	<div class='flex flex-col gap-5'>
-		<Button fn={()=>{redirect(308,'/yes')}}>Yes</Button>
-		<Button fn={()=>{}}>No</Button>
+		<Button fn={()=>{yes = true}}>Yes</Button>
+		<Button fn={()=>{window.open('', '_self', ''); window.close();}}>No</Button>
 	</div>
 	<LoveArrow left={0} top={5}/> 
 	<LoveArrow left={70} top={30}/> 
@@ -60,7 +63,9 @@
 			<img src="/love-arrow.png" alt=""  class={`w-[70px] aspect-square`}>
 		{/each}
 	</div> 
-
 	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
 	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
+	{#if yes}
+		<Yes/>
+	{/if}
 </main>
