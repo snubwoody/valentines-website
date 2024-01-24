@@ -35,8 +35,8 @@
 	//TODO animate circles
 </script>
 
-<main class='w-screen h-screen flex flex-col items-center justify-center gap-2 relative '>
-	<p class="text-3xl font-bold font-['Tangerine',cursive] absolute top-0">14.02.2024</p>
+<main class='w-screen h-screen flex flex-col items-center justify-center gap-2 relative overflow-hidden '>
+	<p class="text-xl font-bold font-['Tangerine',cursive] absolute top-0">14.02.2024</p>
 	<div class='flex flex-col gap-1 items-center'>
 		<p class='text-3xl font-bold font-["tangerine",cursive]'>Tionge Nkolola</p>
 		<p class='text-3xl font-bold font-["tangerine",cursive]'>Will you be my</p>
@@ -56,5 +56,6 @@
 	<LoveArrow x={0} y={screenHeight-70-5}/> 
 	<LoveArrow x={0} y={screenHeight-70-70}/>
 	<p class="text-3xl font-bold font-['Tangerine',cursive] absolute bottom-0">xoxo</p>
-	
+	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
+	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 </main>
