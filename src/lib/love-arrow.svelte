@@ -2,8 +2,10 @@
     import { browser } from '$app/environment';
 	import anime from 'animejs';
     import { onMount } from 'svelte';
-	export let x = 0;
-	export let y = 0;
+	export let left = 0;
+	export let top = 0;
+	export let bottom = 0;
+	export let right = 0;
 	let loveArrow:HTMLElement;
 
 	onMount(() => {
@@ -25,5 +27,11 @@
 src="/love-arrow.png" 
 alt="" 
 bind:this={loveArrow}
-style={`left: ${x}px; top: ${y}px`}
+style={`
+left: ${left}px; 
+top: ${top}px;
+bottom: ${bottom}px;
+right: ${right}px;
+`
+}
 class={`w-[70px] aspect-square absolute`}>

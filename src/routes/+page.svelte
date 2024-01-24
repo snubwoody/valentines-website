@@ -30,6 +30,7 @@
 	}
 
 	onMount(()=>{animateCircle()})
+	let items = [0,1,2,3]
 
 	
 	//TODO animate circles
@@ -48,14 +49,18 @@
 		<Button fn={()=>{redirect(308,'/yes')}}>Yes</Button>
 		<Button fn={()=>{}}>No</Button>
 	</div>
-	<LoveArrow x={0} y={5}/> 
-	<LoveArrow x={70} y={30}/> 
-	<LoveArrow x={0} y={50}/> 
-	<LoveArrow x={screenWidth-70} y={5}/> 
-	<LoveArrow x={screenWidth-70} y={100}/> 
-	<LoveArrow x={0} y={screenHeight-70-5}/> 
-	<LoveArrow x={0} y={screenHeight-70-70}/>
-	<p class="text-3xl font-bold font-['Tangerine',cursive] absolute bottom-0">xoxo</p>
+	<LoveArrow left={0} top={5}/> 
+	<LoveArrow left={70} top={30}/> 
+	<LoveArrow left={0} top={50}/> 
+	<LoveArrow left={screenWidth-70} top={10}/> 
+	<LoveArrow left={screenWidth-70} top={60}/>
+	<LoveArrow left={screenWidth-70} top={110}/> 
+	<div class="absolute flex items-center justify-between bottom-0 left-0 h-fit w-screen">
+		{#each items as item}
+			<img src="/love-arrow.png" alt=""  class={`w-[70px] aspect-square`}>
+		{/each}
+	</div> 
+
 	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
 	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 </main>
