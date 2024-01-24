@@ -16,7 +16,7 @@
 		anime({
 			targets:loveArrow,
 			scale:[0.5,1.5,0.5,1.5],
-			duration:900,
+			duration:1100,
 			loop:true,
 			easing: 'spring(1, 80, 90, 10)'
 		})
