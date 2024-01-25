@@ -55,15 +55,21 @@
 	<LoveArrow left={0} top={5}/> 
 	<LoveArrow left={70} top={30}/> 
 	<LoveArrow left={0} top={50}/> 
-	<LoveArrow left={screenWidth-70} top={10}/> 
-	<LoveArrow left={screenWidth-100} top={60}/>
-	<LoveArrow left={screenWidth-70} top={110}/> 
-	<LoveArrow left={screenWidth-70} top={screenHeight-100}/> 
-	<LoveArrow left={screenWidth-100} top={screenHeight-150}/> 
-	<LoveArrow left={0} top={screenHeight-150}/> 
-	<LoveArrow left={0} top={screenHeight-100}/> 
-	<LoveArrow left={70} top={screenHeight-125}/> 
-	<LoveArrow left={70} top={screenHeight-125}/> 
+	<LoveArrow right={0} top={5}/> 
+	<LoveArrow right={70} top={30}/> 
+	<LoveArrow right={0} top={60}/> 
+	<LoveArrow right={70} bottom={30}/>
+	<LoveArrow right={10} bottom={10}/>
+	<LoveArrow left={5} bottom={50}/>
+	<LoveArrow left={90} bottom={80}/>
+	<LoveArrow left={90} bottom={5}/>
+	<LoveArrow left={5} bottom={120}/>
+
+
+
+
+
+
 	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
 	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 	{#if yes}
