@@ -32,9 +32,7 @@
 		console.log(screenWidth)
 	}
 
-	onMount(()=>{animateCircle()})
-	let items = [0,1,2,3]
-
+	onMount(()=>{})
 	
 	//TODO animate circles
 </script>
@@ -64,12 +62,6 @@
 	<LoveArrow left={90} bottom={80}/>
 	<LoveArrow left={90} bottom={5}/>
 	<LoveArrow left={5} bottom={120}/>
-
-
-
-
-
-
 	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
 	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 	{#if yes}
