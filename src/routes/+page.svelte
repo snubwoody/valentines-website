@@ -39,7 +39,7 @@
 	//TODO animate circles
 </script>
 
-<main class='w-screen h-screen flex flex-col items-center justify-center gap-2 relative overflow-hidden '>
+<main class='w-screen h-[100dvh] flex flex-col items-center justify-center gap-2 relative overflow-hidden '>
 	<p class="text-xl font-bold font-['Tangerine',cursive] absolute top-0">14.02.2024</p>
 	<div class='flex flex-col gap-1 items-center'>
 		<p class='text-3xl font-bold font-["tangerine",cursive]'>Tionge Nkolola</p>
@@ -56,13 +56,14 @@
 	<LoveArrow left={70} top={30}/> 
 	<LoveArrow left={0} top={50}/> 
 	<LoveArrow left={screenWidth-70} top={10}/> 
-	<LoveArrow left={screenWidth-70} top={60}/>
+	<LoveArrow left={screenWidth-100} top={60}/>
 	<LoveArrow left={screenWidth-70} top={110}/> 
-	<div class="absolute flex items-center justify-between bottom-0 left-0 h-fit w-screen">
-		{#each items as item}
-			<img src="/love-arrow.png" alt=""  class={`w-[70px] aspect-square`}>
-		{/each}
-	</div> 
+	<LoveArrow left={screenWidth-70} top={screenHeight-100}/> 
+	<LoveArrow left={screenWidth-100} top={screenHeight-150}/> 
+	<LoveArrow left={0} top={screenHeight-150}/> 
+	<LoveArrow left={0} top={screenHeight-100}/> 
+	<LoveArrow left={70} top={screenHeight-125}/> 
+	<LoveArrow left={70} top={screenHeight-125}/> 
 	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
 	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 	{#if yes}
