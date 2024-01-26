@@ -41,13 +41,13 @@
 		<LoveEmoji/>
 		<LoveEmoji/>
 	</div>
-	<div class="absolute top-44 right-16 rotate-12">
-		<PicFrame imgSrc='/pic-1.webp' width={120}/>
+	<div class="absolute top-[9vh] right-[15vw] rotate-12 w-fit h-fit shadow-lg bg-white border-b-[30px] border-[10px] border-white">
+		<img src='/pic-1.webp' alt="" class='w-[30vw]'>
 	</div>
-	<div class="absolute top-5 left-20">
-		<PicFrame imgSrc='/pic-3.webp' width={100}/>
+	<div class="absolute top-[3vh] left-[15vw] w-fit h-fit shadow-lg bg-white border-b-[30px] border-[10px] border-white">
+		<img src='/pic-3.webp' alt="" class='w-[25vw] '>
 	</div>
-	<div class="absolute bottom-5">
-		<PicFrame imgSrc='/pic-2.webp' width={250}/>
+	<div class="absolute bottom-[1vh] w-fit h-fit shadow-lg bg-white border-b-[30px] border-[10px] border-white">
+		<img src='/pic-2.webp' alt="" class='w-[50vw] max-h-[40vh] '>
 	</div>
 </main>
