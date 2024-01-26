@@ -42,7 +42,7 @@
 		<p class='text-3xl font-bold font-["tangerine",cursive]'>Tionge Nkolola</p>
 		<p class='text-3xl font-bold font-["tangerine",cursive]'>Will you be my</p>
 		<div class="w-full px-10 ">
-			<img src="/Valentine-2.png" alt="" srcset="" class="w-full ">
+			<img src="/Valentine-2.webp" alt="" srcset="" class="w-full ">
 		</div>
 	</div>
 	<div class='flex flex-col gap-5'>
@@ -65,8 +65,8 @@
 	<LoveArrow left={90} bottom={80}/>
 	<LoveArrow left={90} bottom={5}/>
 	<LoveArrow left={5} bottom={120}/>
-	<img src="/eclipse.png" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
-	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
+	<img src="/eclipse.webp" alt="" srcset="" class="absolute right-[-170px] bottom-[-150px]">
+	<img src="/eclipse.webp" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 	{#if yes}
 		<Yes/>
 	{/if}

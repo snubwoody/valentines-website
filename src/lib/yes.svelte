@@ -42,12 +42,12 @@
 		<LoveEmoji/>
 	</div>
 	<div class="absolute top-44 right-16 rotate-12">
-		<PicFrame imgSrc='/pic-1.jpeg' width={120}/>
+		<PicFrame imgSrc='/pic-1.webp' width={120}/>
 	</div>
 	<div class="absolute top-5 left-20">
-		<PicFrame imgSrc='/pic-3.jpeg' width={100}/>
+		<PicFrame imgSrc='/pic-3.webp' width={100}/>
 	</div>
 	<div class="absolute bottom-5">
-		<PicFrame imgSrc='/pic-2.JPG' width={250}/>
+		<PicFrame imgSrc='/pic-2.webp' width={250}/>
 	</div>
 </main>
