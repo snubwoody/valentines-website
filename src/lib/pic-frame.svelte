@@ -8,5 +8,5 @@
 </script>
 
 <div class="w-fit h-fit shadow-lg bg-white border-b-[30px] border-[10px] border-white">
-	<img src={imgSrc} alt="" width={`${width}px`}s srcset="" class={``}>
+	<img src={imgSrc} alt="" width={`${width}px`}s srcset="" class="">
 </div>

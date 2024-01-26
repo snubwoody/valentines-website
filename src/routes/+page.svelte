@@ -3,6 +3,7 @@
     import Button from "$lib/button.svelte";
     import LoveArrow from "$lib/love-arrow.svelte";
     import Yes from "$lib/yes.svelte";
+	import No from "$lib/no.svelte"
     import { redirect } from "@sveltejs/kit";
     import anime from "animejs";
     import { onMount } from "svelte";
@@ -12,6 +13,7 @@
 	let eclipse:HTMLElement;
 
 	let yes:boolean | null = null;
+	let no: boolean | null = null
 
 	const animateCircle = () => {
 		anime({
@@ -28,11 +30,8 @@
 	if(browser){
 		screenWidth = window.screen.width;
 		screenHeight = window.screen.height;
-		screenWidth > 600 ? redirect(308,'/not_permitted') : null;
-		console.log(screenWidth)
 	}
 
-	onMount(()=>{})
 	
 	//TODO animate circles
 </script>
@@ -47,8 +46,12 @@
 		</div>
 	</div>
 	<div class='flex flex-col gap-5'>
-		<Button fn={()=>{yes = true}}>Yes</Button>
-		<Button fn={()=>{window.open('', '_self', ''); window.close();}}>No</Button>
+		<Button fn={()=>{yes = true; no = null}}>Yes</Button>
+		<Button fn={()=>{
+			no = true; 
+			yes = null
+			setTimeout(()=>{no = null;},2500)
+		}}>No</Button>
 	</div>
 	<LoveArrow left={0} top={5}/> 
 	<LoveArrow left={70} top={30}/> 
@@ -66,5 +69,8 @@
 	<img src="/eclipse.png" alt="" srcset="" class="absolute left-[-170px] top-[-150px]">
 	{#if yes}
 		<Yes/>
+	{/if}
+	{#if no}
+		<No/>
 	{/if}
 </main>
