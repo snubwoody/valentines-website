@@ -32,7 +32,7 @@
 </script>
 
 <img 
-src="/love-arrow.png" 
+src="/love-arrow.webp" 
 alt="" 
 bind:this={loveArrow}
 style={`${yAxis}; ${xAxis}`}
