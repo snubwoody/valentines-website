@@ -45,7 +45,7 @@
 			<img src="/Valentine-2.webp" alt="" srcset="" class="w-full ">
 		</div>
 	</div>
-	<div class='flex flex-col gap-5 w-fit px-5'>
+	<div class='flex flex-col gap-5 w-fit px-5 z-50'>
 		<Button fn={()=>{yes = true; no = null}}>Yes</Button>
 		<Button fn={()=>{
 			no = true; 
